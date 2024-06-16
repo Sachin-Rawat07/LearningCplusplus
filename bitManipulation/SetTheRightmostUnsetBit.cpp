@@ -11,7 +11,6 @@ int main(){
         if(val==0){
             n=n|(1<<count);
             break;
-            
         }
         temp>>=1;
             count++;
