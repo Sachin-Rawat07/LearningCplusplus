@@ -20,3 +20,23 @@ int main(){
 
 
 }
+
+// #include<bits/stdc++.h>
+
+// using namespace std;
+
+// class Student{
+//     public:  
+//     string name;
+//     int age,roll_no;
+
+// };
+
+// int main(){
+//     Student A1;  
+//     A1.name="Sachin";
+//     A1.age=21;
+//     A1.roll_no=67;
+
+
+// }
