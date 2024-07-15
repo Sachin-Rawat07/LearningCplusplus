@@ -1,8 +1,7 @@
-#include <iostream>
-#include<vector>
+#include <bits/stdc++.h>
 using namespace std;
     vector<int> productExceptSelf(vector<int>& nums) {
-        int n=nums.size();
+        /*int n=nums.size();
         vector<int> left(n);
         vector<int> right(n);
         int product1=1;
@@ -26,7 +25,30 @@ using namespace std;
         cout<<i<<" ";
     }
 
-        return ans;
+        return ans;*/
+        int n=nums.size();
+        vector<int>leftArr(n,1);
+        vector<int>rightArr(n,1);
+        vector<int>anssArr(n,1);
+        for(int i= 1;i<n;i++){
+            leftArr[i]=leftArr[i-1]*nums[i-1];
+        }
+
+        for(int i=n-2;i>=0;i--){
+            rightArr[i]=rightArr[i+1]*nums[i+1];
+        }
+        
+        for(int i=0;i<n;i++){
+            anssArr[i]=leftArr[i]*rightArr[i];
+        }
+
+        return anssArr;
+ f5
+
+
+
+
+
     }
 
 int main(){

@@ -27,9 +27,8 @@ int maxFrequencyElements(vector<int>& nums) {
     }
 
 int main(){
-    vector<int> nums={1,2,2,4,5};
+    vector<int> nums={1,2,2,2,3,3,3,4,5};
     cout<<maxFrequencyElements(nums)<<endl;
-
 
 
     return 0;
