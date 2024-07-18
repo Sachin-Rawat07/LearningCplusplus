@@ -33,4 +33,4 @@ int main() {
     int n = 3;
     generateBinaryStrings(n);
     return 0;
-}
+}  
