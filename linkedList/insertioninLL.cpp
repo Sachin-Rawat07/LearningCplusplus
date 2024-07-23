@@ -73,7 +73,7 @@ void deleteAtHead(Node* &head){
 // deleting node from the end
 void deleteFromEnd(Node* &head){
     Node* second_last=head;
-    while(second_last->next->next!=NULL){
+    while(second_last->next->next!=NULL){;\   
         second_last=second_last->next;
 
     }
@@ -102,13 +102,6 @@ void deleteAtK(Node* &head, int pos){
 
     
 }
-
-
-
-
-
-
-
 
 //display function
 void display(Node* head){

@@ -1,5 +1,4 @@
-#include <iostream>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 int binarySearch(int arr[], int n, int target){
@@ -8,8 +7,10 @@ int binarySearch(int arr[], int n, int target){
     int high=n-1;
     while(low<=high){
         int mid=low+(high-low)/2;
-        if(arr[mid]==target)
-        ans=mid;
+        if(arr[mid]==target){
+            ans=mid;
+            break;
+        }
         else if(arr[mid]<target)
         low=mid+1;
         else
@@ -21,8 +22,8 @@ int binarySearch(int arr[], int n, int target){
 int main(){
     int arr[8]={2,3,5,6,7,8,9,10};
     int n=8;
-    int target=9;
-    cout<<binarySearch(arr,n,target);
-
+    int target=11;
+    cout<<binarySearch(arr,n,target)<<endl;
+    cout<<"helo";
 return 0 ;
 }
