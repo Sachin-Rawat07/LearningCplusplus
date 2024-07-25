@@ -25,7 +25,7 @@ string sortString1(string s1){
 }
 
 int main(){
-    string s1="anagram";
+    string s1="tree";
    
 
     string ans1= sortString(s1);

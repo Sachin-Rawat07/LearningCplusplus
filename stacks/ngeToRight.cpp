@@ -6,8 +6,8 @@ using namespace std;
 
 vector<int> ngeToRight(vector<int> &arr){
     int n=arr.size();
-    vector<int> v;
-    stack<int> st;
+        vector<int> v;
+        stack<int> st;
 
     for( int i=n-1;i>=0;i--){
         if(st.size()==0){
@@ -25,7 +25,7 @@ vector<int> ngeToRight(vector<int> &arr){
             else v.push_back(st.top());
         
         }
-st.push(arr[i]);
+    st.push(arr[i]);
 
     }
 reverse(v.begin(),v.end());
