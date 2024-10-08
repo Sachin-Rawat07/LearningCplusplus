@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 
-void print(int n){
-    if(n==1 ) return 1;
+int print(int n){
+    if(n==1 ){cout<<n<<endl; return 1 ;}
 
     
     print(n-1);
