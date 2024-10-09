@@ -14,8 +14,7 @@ void print(int n){
 
 
 int main(){
-    int n;
-    cin>>n;
-    print(n);
+    
+    print(7);
 return 0;
 }
